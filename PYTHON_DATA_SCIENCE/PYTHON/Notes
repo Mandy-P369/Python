@@ -1,0 +1,196 @@
+ # Introduction of python :-
+
+Python is dynamically typed language .
+It is general purpose programming language that support object oriented programming.
+Python is interpreted and high level language.
+It was created by  Guido Van Rossum in 1989.
+It is platform independent language too.
+
+<!-- Modules -->
+Modules are used to borrow the pre written code for using in our program .
+Modules are of two types : 
+-> External Modules
+-> Built in Modules
+
+
+# Ternary Operator in Python
+ To check the condition in the python by the ternary operator ,
+    Syntax of ternary operator :
+
+     result = "boy" if (name = "aayush") else "girl"
+
+String
+String is a data type that stores a sequence of characters.
+Basic operations : 
+1. Concatenations  :
+                    => "Hello "+"World" -----> "HelloWorld"
+
+2. Length of the String : 
+                    => len(str) 
+
+3. Valid form of creaating the String : 
+                    => str1 = "String"
+                    => str2 = 'String'
+                    => str3 ="""String"""
+            These are the way to create the String 
+
+4. Backslash n () :
+            =>  It is escape sequence character , which is used to change the line inside the String .
+
+5. Backslash t (t): 
+            =>  It is used to create distance of atleast 5 per space at once inside the String .
+            
+#  Indexing in String :
+a  a  y  u  s  h  p  a  t  e  r  i   y  a
+1  2  3  4  5  6  7  8  9  10 11 12  13 14
+
+str = "aayushpateriya"
+ch=str[2]
+print(ch) # Output: y
+
+Note : We didnot replace the character of the particular String like that :
+        name = "aayush pateriya"
+        str[6] = "@"  //Like that 
+        print(str)
+
+
+<!-- Slicing in python  -->
+If we take the selected character from the String then we will 
+implement the Slicing function in the Python ..
+        str = "Aayush pateriya"
+        str1 = str[1:4]
+        print(str1) /// output:ayu
+
+If we want to select the all the character of the String from the selected index upto last index .
+than,
+        str = "XansaITSolutions"
+        str2 = str[2:] // str(2:len(str))
+        print(str2) // output:nsaITSolutions
+
+
+<!-- Slicing in negative index  -->
+If we want to index negatively our String backwardly
+  S  h  y  a  m 
+ -5 -4 -3 -2 -1
+
+# String Functions 
+1. EndsWith Function :
+str = "I am a coder "
+str.endswith("er.")# return  true if the String ends with subString 
+
+2. Capitalize() Function 
+3. Replace() Function 
+4. Find() Function 
+5. Count() function 
+
+# Indentation
+The Indentation is the space given before writting the print statement in the conditional statement .
+The indentation in the python programming is vvery important .
+For Example :
+
+name = "aayush"
+
+if(name=="disha):
+        print("she is a girl")
+elif(name="aayush")
+        print("He is a boy")
+
+
+# Nesting Statement 
+The nesting statement is to write the conditional statement inside the conditional statement .
+For example : 
+marks = int(input("Enter the marks of the student))
+if(marks>89 and marks>100):
+        grade="A"
+        if(grade=="A")
+                print("Give them the prize")
+                
+# Lists in Python
+ A built-in data type that stores set of values
+ It can store elements of different types (integer, float, string, etc.)
+
+ marks = [87, 64, 33, 95, 76]
+ #marks[0], marks[1]..
+ student = [”Karan”, 85, “Delhi”] #student[0], student[1]..
+ student[0] = “Arjun” #allowed in python
+ len(student)
+ apna college     
+
+ -> We can change the type of the any element inside the list ..
+such that list is also mutable
+
+# List Slicing
+ Similar to String Slicing
+ list_name[ starting_idx : ending_idx ] #ending idx is not included
+
+ marks = [87, 64, 33, 95, 76]
+ marks[ 1 : 4 ] is [64, 33, 95]
+ marks[  : 4 ] is same as marks[ 0 : 4]
+ marks[ 1 :  ] is same as marks[ 1 : len(marks) ]
+ marks[ -3 : -1 ] is [33, 95]
+
+# List Methods
+ list = [2, 1, 3]
+ list.append(4)  #adds one element at the end 
+list.sort( )
+  #sorts in ascending order 
+[2, 1, 3, 4]
+ [1, 2, 3]
+
+ list.sort( reverse=True ) 
+  #sorts in descending order 
+
+list.reverse( )  
+#reverses list 
+[3, 1, 2]
+[3, 2, 1]
+Apna College
+list.insert( idx, el )  #insert element at index
+
+# Tuples in Python
+ A built-in data type that lets us create immutable sequences of values.
+ Tuples is immutable just like String ..
+
+ 2. We will not change the element either with their same data type of element .
+
+For Example : 
+ tup = (87, 64, 33, 95, 76) #tup[0], tup[1]..
+ tup[0] = 43 #NOT allowed in python
+ tup1 = ( )
+ tup2 = ( 1, )
+ tup3 = ( 1, 2, 3 )
+
+# Set in Python
+# Set is a collection of the unordered items  .
+# Each Element in the set must be the unique and immutable .
+# The Set is mutable , but the element of the set is immutable .
+# The numbers , String and tuples should be stored in the Sets.
+
+
+#  -> How to create empty set 
+collection = {} # This is not the creation of the empty set , It is the 
+                #creation of the empty dictionary
+
+collection = set() # creation of empty Set 
+
+
+
+The methods of the Set :
+set.add(el) # it adds the element
+set.remove(el) # it removes a element
+set.clear() #it clear the whole set
+set.pop() # it pop up or remove the first element from the set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
