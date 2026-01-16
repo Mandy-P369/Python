@@ -22,6 +22,10 @@ print(car.type)
 car2 = Car("Diesel")
 print(car2.type)
 print(car.type)
+# Class method ......
+# Class method is the bound of class  and receives the class as implicit first arguement 
+# Static method can't access or modify class state generally for utility ......
+
 
         
 

@@ -1,5 +1,6 @@
 # Creating Empty Tuples :
 tup = (1,4,5,5.6,6.5,45.4,6.5)
+# tup.add(7) No attribute in tuple ....
 print(tup)
 print(type(tup))
 print(tup.index(4))
@@ -38,7 +39,7 @@ grade = ("C","D","A","A","B","B","A")
 grade.count("A")
 print(grade.count("A"))
 
-#Write a program to store the abovve values  in a list  & sort them from
+#Write a program to store the above values  in a list  & sort them from
 # "A" to "D"....
 
 

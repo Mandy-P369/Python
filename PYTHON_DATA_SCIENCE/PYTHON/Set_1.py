@@ -24,7 +24,6 @@ print(details)
 
 # What do we mean by unshapable type 
 #  Values which are immutable should be stored inside the Set .
-
 # Union methods in Set 
 set1  =set()
 set1.add(1)

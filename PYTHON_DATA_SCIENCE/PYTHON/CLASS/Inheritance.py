@@ -38,13 +38,14 @@ class Audi(Car):
           print("Speed / HP:", horsepower)
           print("Doors in Audi:", self.doors)
 
-
+     def selfdriving(self) : 
+         print("IT is self driving car ")
 
 tax = int(input("Enter tax: "))
 amount = int(input("Enter amount: "))
 enginetype = input("Enter engine type: ")
 
-car = Car(4, 5, enginetype)   # Correct values
+car = Car(4, 5, enginetype)
 car.costofcar(enginetype, amount, tax)
 car.driving()
 car.calculation()
@@ -52,7 +53,12 @@ car.calculation()
 print("--------------------------------")
 
 audi = Audi(4, 5, 'petrol', 50)
-audi.costofcar('petrol', 600000, 12)
+audi.costofcar('petrol', 567567, 12)
 audi.calculation()
+audi.selfdriving()
+
+print(dir(audi))
+print(dir(car))
+# dir is used find the access for that class.....
 
 print("---------------------------------")

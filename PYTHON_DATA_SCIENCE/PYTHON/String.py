@@ -28,7 +28,7 @@ print(str2)
 # String Functions 
 str = "i" \
 " am a coder "
-print(str.endswith("er."))# return  true if the String ends with subString 
+print(str.endswith("er"))# return  true if the String ends with subString 
 
 str2 = print(str.capitalize()) # it capitalizes the first character of the String
 

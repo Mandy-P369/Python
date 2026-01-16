@@ -41,7 +41,35 @@ details('aayush',21)
 
 # Functions : Keywords Arguements 
 def details(name='aayush',age=21):
-    print('My name is '+name+'I am'+str(age))
+    print('My name is '+ name +'I am'+str(age))
 details()
+
+def hello(*args,**kwargs):
+    # print("My name is "+ args + "I am "+kwargs)
+    print(args)
+    print(kwargs)
+
+    # Description : The keywords arguement will be shown inside
+    # dictionary and positional arguements in list format
+hello('aayush','pateriya',age=21,dob=2005,day=5,month='january')
+
+
+def details(*args,**kwargs):
+    print(args)
+    print(kwargs)
+
+lst = (('aayush','pateriya'))
+dict = {'name' : 'aayush','surname' : 'pateriya' }
+details(*lst,**dict)
+print(details()) # None
+
+def details(*args ,**kwargs) : 
+    print(args)
+    print(kwargs)
+    
+details(45,45,name='aayush')
+    
+
+
 
 

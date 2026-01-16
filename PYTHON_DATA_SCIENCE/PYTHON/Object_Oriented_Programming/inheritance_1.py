@@ -21,6 +21,5 @@ toy=Toyota("Fortuner")
 print(toy)
 
 
-
 # Super method : Super method is the method used to access the methods of the parent class .....
  
