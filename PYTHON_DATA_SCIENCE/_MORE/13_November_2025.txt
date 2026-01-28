@@ -1,0 +1,451 @@
+
+SQL*Plus: Release 21.0.0.0.0 - Production on Thu Nov 13 10:04:17 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+Enter user-name: student/bharat
+Last Successful login time: Wed Nov 12 2025 22:29:16 +05:30
+
+Connected to:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> drop table members;
+
+Table dropped.
+
+SQL> create table members(name varchar(15));
+
+Table created.
+
+SQL> insert into members values('Rajendra');
+insert into members values('Rajendra')
+            *
+ERROR at line 1:
+ORA-01950: no privileges on tablespace 'USERS'
+
+
+SQL> grant connect ,resource to student;
+grant connect ,resource to student
+*
+ERROR at line 1:
+ORA-01932: ADMIN option not granted for role 'CONNECT'
+
+
+SQL> connect;
+Enter user-name: system/pateriya
+Connected.
+SQL> grant grant any privileges to student;
+grant grant any privileges to student
+      *
+ERROR at line 1:
+ORA-00990: missing or invalid privilege
+
+
+SQL> grant grant any privilege to student;
+
+Grant succeeded.
+
+SQL> connect student/bharat
+Connected.
+SQL> insert into members values('Ayush');
+insert into members values('Ayush')
+            *
+ERROR at line 1:
+ORA-01950: no privileges on tablespace 'USERS'
+
+
+SQL> connect system/pateriya as sysdba;
+Connected.
+SQL> alter session set quota unlimited on students;
+alter session set quota unlimited on students
+                  *
+ERROR at line 1:
+ORA-02248: invalid option for ALTER SESSION
+
+
+SQL> alter session set quota unlimited on student;
+alter session set quota unlimited on student
+                  *
+ERROR at line 1:
+ORA-02248: invalid option for ALTER SESSION
+
+
+SQL> alter session set _quota_unlimited on student;
+alter session set _quota_unlimited on student
+                  *
+ERROR at line 1:
+ORA-00911: invalid character
+
+
+SQL> alter user student quota unlimited on users;
+
+User altered.
+
+SQL> connect student/bharat;
+Connected.
+SQL> insert into members values('Ayush');
+
+1 row created.
+
+SQL> drop table members ;
+
+Table dropped.
+
+SQL> create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE default sysdate);
+create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE default sysdate)
+                     *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE default(sysdate));
+create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE default(sysdate))
+                     *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE DAFAULT SYSDATE);
+create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE DAFAULT SYSDATE)
+                     *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE );
+create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE )
+                     *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100));
+create table members values(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100))
+                     *
+ERROR at line 1:
+ORA-00922: missing or invalid option
+
+
+SQL> create table members(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE deafult sysdate );
+create table members(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE deafult sysdate )
+                                                                                                                                                                                            *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table members(member_id number(3) primary key,first_name varchar(15)not null,email varchar(15)not null,age number(3) constraint age check(age>=12 and age<=100),membership_date DATE default sysdate );
+
+Table created.
+
+SQL> desc members;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ MEMBER_ID                                 NOT NULL NUMBER(3)
+ FIRST_NAME                                NOT NULL VARCHAR2(15)
+ EMAIL                                     NOT NULL VARCHAR2(15)
+ AGE                                                NUMBER(3)
+ MEMBERSHIP_DATE                                    DATE
+
+SQL> select *
+  2   from members;
+
+no rows selected
+
+SQL> insert into members values(1,'aayush','aayush56@gmail.com',21,default);
+insert into members values(1,'aayush','aayush56@gmail.com',21,default)
+                                      *
+ERROR at line 1:
+ORA-12899: value too large for column "STUDENT"."MEMBERS"."EMAIL" (actual: 18,
+maximum: 15)
+
+
+SQL> alter table members modify column email varchar(30);
+alter table members modify column email varchar(30)
+                                        *
+ERROR at line 1:
+ORA-00905: missing keyword
+
+
+SQL> alter table members modify  email varchar(30);
+
+Table altered.
+
+SQL> select *
+  2   from members;
+
+no rows selected
+
+SQL> insert into members values(2,'Krishna','krishna4532hotmail.com',43,default);
+
+1 row created.
+
+SQL> insert into members values(2,'Veerendra','veerendrabetat65@hotmail.com',22,default);
+insert into members values(2,'Veerendra','veerendrabetat65@hotmail.com',22,default)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (STUDENT.SYS_C008484) violated
+
+
+SQL> insert into members values(3,'Veerendra','veerendrabetat65@hotmail.com',22,default);
+
+1 row created.
+
+SQL> insert into members values(4,'Veer','veert6556@hotmail.com',20,default);
+
+1 row created.
+
+SQL> select * from members;
+
+ MEMBER_ID FIRST_NAME      EMAIL                                 AGE MEMBERSHI
+---------- --------------- ------------------------------ ---------- ---------
+         2 Krishna         krishna4532hotmail.com                 43 13-NOV-25
+         3 Veerendra       veerendrabetat65@hotmail.com           22 13-NOV-25
+         4 Veer            veert6556@hotmail.com                  20 13-NOV-25
+
+SQL> insert into members values(&member_id , '&first_name','&email',&age,'&membership-date');
+Enter value for member_id: 5
+Enter value for first_name: Abhay
+Enter value for email: abhay45@gmail.com
+Enter value for age: 43
+Enter value for membership: default
+old   1: insert into members values(&member_id , '&first_name','&email',&age,'&membership-date')
+new   1: insert into members values(5 , 'Abhay','abhay45@gmail.com',43,'default-date')
+insert into members values(5 , 'Abhay','abhay45@gmail.com',43,'default-date')
+                                                              *
+ERROR at line 1:
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+
+SQL> insert into members values(&member_id , '&first_name','&email',&age,'&membership_date');
+Enter value for member_id: 5
+Enter value for first_name: abhay
+Enter value for email: Abhay3&gmail.com
+Enter value for age: 5434
+Enter value for membership_date: default
+old   1: insert into members values(&member_id , '&first_name','&email',&age,'&membership_date')
+new   1: insert into members values(5 , 'abhay','Abhay3&gmail.com',5434,'default')
+insert into members values(5 , 'abhay','Abhay3&gmail.com',5434,'default')
+                                                          *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allowed for this column
+
+
+SQL> insert into members values(&member_id , '&first_name','&email',&age,'&membership_date');
+Enter value for member_id: 5
+Enter value for first_name: abhay
+Enter value for email: Abhay3&gmail.com
+Enter value for age: 43
+Enter value for membership_date: default
+old   1: insert into members values(&member_id , '&first_name','&email',&age,'&membership_date')
+new   1: insert into members values(5 , 'abhay','Abhay3&gmail.com',43,'default')
+insert into members values(5 , 'abhay','Abhay3&gmail.com',43,'default')
+                                                             *
+ERROR at line 1:
+ORA-01858: a non-numeric character was found where a numeric was expected
+
+
+SQL> insert into members values(&member_id , '&first_name','&email',&age,&membership_date);
+Enter value for member_id: 5
+Enter value for first_name: abhay
+Enter value for email: Abhay3&gmail.com
+Enter value for age: 43
+Enter value for membership_date: default
+old   1: insert into members values(&member_id , '&first_name','&email',&age,&membership_date)
+new   1: insert into members values(5 , 'abhay','Abhay3&gmail.com',43,default)
+
+1 row created.
+
+SQL> /
+Enter value for member_id: 6
+Enter value for first_name: Ashwin
+Enter value for email: ashwin54@bharatmail.com
+Enter value for age: 65
+Enter value for membership_date: 23-Jan-2024
+old   1: insert into members values(&member_id , '&first_name','&email',&age,&membership_date)
+new   1: insert into members values(6 , 'Ashwin','ashwin54@bharatmail.com',65,23-Jan-2024)
+insert into members values(6 , 'Ashwin','ashwin54@bharatmail.com',65,23-Jan-2024)
+                                                                        *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> /
+Enter value for member_id: 6
+Enter value for first_name: Ashwin
+Enter value for email: ashwin54@bharatmail.com
+Enter value for age: 65
+Enter value for membership_date: '23-Jan-2024'
+old   1: insert into members values(&member_id , '&first_name','&email',&age,&membership_date)
+new   1: insert into members values(6 , 'Ashwin','ashwin54@bharatmail.com',65,'23-Jan-2024')
+
+1 row created.
+
+SQL> Select * from members ;
+
+ MEMBER_ID FIRST_NAME      EMAIL                                 AGE MEMBERSHI
+---------- --------------- ------------------------------ ---------- ---------
+         2 Krishna         krishna4532hotmail.com                 43 13-NOV-25
+         3 Veerendra       veerendrabetat65@hotmail.com           22 13-NOV-25
+         4 Veer            veert6556@hotmail.com                  20 13-NOV-25
+         5 abhay           Abhay3&gmail.com                       43 13-NOV-25
+         6 Ashwin          ashwin54@bharatmail.com                65 23-JAN-24
+
+SQL> create table books(book_id number(3)primary key,title varchar(20)not null,isbn varchar(20) not null unique,publication_year  number(4)constraint
+  2  publication_year check(publication_year >1800 and publication_year < 2025),available_copies number(3) default (1));
+
+Table created.
+
+SQL> desc books;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOK_ID                                   NOT NULL NUMBER(3)
+ TITLE                                     NOT NULL VARCHAR2(20)
+ ISBN                                      NOT NULL VARCHAR2(20)
+ PUBLICATION_YEAR                                   NUMBER(4)
+ AVAILABLE_COPIES                                   NUMBER(3)
+
+SQL> Select * from books ;
+
+no rows selected
+
+SQL> insert into books values (&book_id,''&title','&isbn',&publication_year,&available_copies);
+Enter value for book_id: 1
+Enter value for title: publication_year check(publication_year >1800 and publication_year < 2025),available_copies number(3) default (1));/
+Enter value for isbn: ;
+Enter value for publication_year: ;
+Enter value for available_copies: ;
+old   1: insert into books values (&book_id,''&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (1,''publication_year check(publication_year >1800 and publication_year < 2025),available_copies number(3) default (1));/',';',;,;)
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies);
+Enter value for book_id: 1
+Enter value for title: book1
+Enter value for isbn: booksisbn1
+Enter value for publication_year: 1945
+Enter value for available_copies: 3
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (1,'book1','booksisbn1',1945,3)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 2
+Enter value for title: books2
+Enter value for isbn: booksisbn2
+Enter value for publication_year: 1956
+Enter value for available_copies: 3
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (2,'books2','booksisbn2',1956,3)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 3
+Enter value for title: books3
+Enter value for isbn: books3isbn3
+Enter value for publication_year: 1967
+Enter value for available_copies: 5
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (3,'books3','books3isbn3',1967,5)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: 4
+Enter value for title: books4
+Enter value for isbn: books4isbn4
+Enter value for publication_year: 1978
+Enter value for available_copies: 4
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (4,'books4','books4isbn4',1978,4)
+
+1 row created.
+
+SQL> /
+Enter value for book_id: books5
+Enter value for title: books5isbn5
+Enter value for isbn: books5isbn5
+Enter value for publication_year: 1989
+Enter value for available_copies: default
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (books5,'books5isbn5','books5isbn5',1989,default)
+insert into books values (books5,'books5isbn5','books5isbn5',1989,default)
+                          *
+ERROR at line 1:
+ORA-00984: column not allowed here
+
+
+SQL> /
+Enter value for book_id: 5
+Enter value for title: books5
+Enter value for isbn: books5isbn5
+Enter value for publication_year: 1989
+Enter value for available_copies: 1
+old   1: insert into books values (&book_id,'&title','&isbn',&publication_year,&available_copies)
+new   1: insert into books values (5,'books5','books5isbn5',1989,1)
+
+1 row created.
+
+SQL> Select * from books ;
+
+   BOOK_ID TITLE                ISBN                 PUBLICATION_YEAR
+---------- -------------------- -------------------- ----------------
+AVAILABLE_COPIES
+----------------
+         1 book1                booksisbn1                       1945
+               3
+
+         2 books2               booksisbn2                       1956
+               3
+
+         3 books3               books3isbn3                      1967
+               5
+
+
+   BOOK_ID TITLE                ISBN                 PUBLICATION_YEAR
+---------- -------------------- -------------------- ----------------
+AVAILABLE_COPIES
+----------------
+         4 books4               books4isbn4                      1978
+               4
+
+         5 books5               books5isbn5                      1989
+               1
+
+
+SQL> create table borrow_records (borrow_id number(3) primary key,member_id  number(3)  references members ,
+  2  book_id number (3) references books ,borrow_date DATE default not null,return_date DATE default null);
+book_id number (3) references books ,borrow_date DATE default not null,return_date DATE default null)
+                                                              *
+ERROR at line 2:
+ORA-00936: missing expression
+
+
+SQL> create table borrow_records (borrow_id number(3) primary key,member_id  number(3)  references members ,
+  2  book_id number (3) references books ,borrow_date DATE default not null,return_date DATE default null);
+book_id number (3) references books ,borrow_date DATE default not null,return_date DATE default null)
+                                                              *
+ERROR at line 2:
+ORA-00936: missing expression
+
+
+SQL> book_id number (3) references books ,borrow_date DATE default(sysdate) not null,return_date DATE default null);
+SP2-0734: unknown command beginning "book_id nu..." - rest of line ignored.
+SQL> create table borrow_records (borrow_id number(3) primary key,member_id  number(3)  references members ,
+  2  book_id number (3) references books ,borrow_date DATE default(sysdate) not null,return_date DATE default null);
+
+Table created.
+
+SQL> desc  borrow_records ;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BORROW_ID                                 NOT NULL NUMBER(3)
+ MEMBER_ID                                          NUMBER(3)
+ BOOK_ID                                            NUMBER(3)
+ BORROW_DATE                               NOT NULL DATE
+ RETURN_DATE                                        DATE

@@ -1,0 +1,947 @@
+
+SQL*Plus: Release 21.0.0.0.0 - Production on Thu Nov 13 11:05:16 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle.  All rights reserved.
+
+Enter user-name: student
+Enter password:
+Last Successful login time: Thu Nov 13 2025 10:15:22 +05:30
+
+Connected to:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> create table student(stid number(3),name varchar(20),email (30),contact varchar(11));
+create table student(stid number(3),name varchar(20),email (30),contact varchar(11))
+                                                           *
+ERROR at line 1:
+ORA-00902: invalid datatype
+
+
+SQL> create table student(stid number(3),name varchar(20),email varchar(30),contact varchar(11));
+
+Table created.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+
+SQL> insert into student values (123,'Sourav','sourav345@yahoo.com','1234567890'
+  2  );
+
+1 row created.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+
+SQL> insert into student values (122,'aayush','aayush355@yahoo.com','12535345'
+  2  );
+
+1 row created.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+       122 aayush               aayush355@yahoo.com            12535345
+
+SQL> desc studentl
+ERROR:
+ORA-04043: object studentl does not exist
+
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+
+SQL> insert into student values (&stid,'&name','&email','&contact');
+Enter value for stid: 432
+Enter value for name: Rajendra
+Enter value for email: Rajendra554@gmail.com
+Enter value for contact: 3434343434
+old   1: insert into student values (&stid,'&name','&email','&contact')
+new   1: insert into student values (432,'Rajendra','Rajendra554@gmail.com','3434343434')
+
+1 row created.
+
+SQL> /
+Enter value for stid: 465
+Enter value for name: Rahul
+Enter value for email: Rahul45@gmail.com
+Enter value for contact: 5656565656
+old   1: insert into student values (&stid,'&name','&email','&contact')
+new   1: insert into student values (465,'Rahul','Rahul45@gmail.com','5656565656')
+
+1 row created.
+
+SQL> /
+Enter value for stid: 432
+Enter value for name: Sonam
+Enter value for email: Sonam@bharatmail.com
+Enter value for contact: 67678789892
+old   1: insert into student values (&stid,'&name','&email','&contact')
+new   1: insert into student values (432,'Sonam','Sonam@bharatmail.com','67678789892')
+
+1 row created.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+       122 aayush               aayush355@yahoo.com            12535345
+       432 Rajendra             Rajendra554@gmail.com          3434343434
+       465 Rahul                Rahul45@gmail.com              5656565656
+       432 Sonam                Sonam@bharatmail.com           67678789892
+
+SQL> update student set name='Saurabh' where stid = 432;
+
+2 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+       122 aayush               aayush355@yahoo.com            12535345
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+       465 Rahul                Rahul45@gmail.com              5656565656
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+
+SQL> update student set email = 'Rahul45@hotmail.com' where stid = 465;
+
+1 row updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+       122 aayush               aayush355@yahoo.com            12535345
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+       465 Rahul                Rahul45@hotmail.com            5656565656
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+
+SQL> update student set name ='Ayush' and contact='1212323234' where stid =122;
+update student set name ='Ayush' and contact='1212323234' where stid =122
+                                 *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> update student set name ='Ayush' and contact='1212323234' where stid =122;
+update student set name ='Ayush' and contact='1212323234' where stid =122
+                                 *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> update student set name ='Ayush'where stid =122;
+
+1 row updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+       122 Ayush                aayush355@yahoo.com            12535345
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+       465 Rahul                Rahul45@hotmail.com            5656565656
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+
+SQL> alter table student add fees number(7);
+
+Table altered.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+
+SQL> insert into student values (765,'Rohit','Rohit45@gmail.com','4556545654');
+insert into student values (765,'Rohit','Rohit45@gmail.com','4556545654')
+            *
+ERROR at line 1:
+ORA-00947: not enough values
+
+
+SQL> insert into student values (765,'Rohit','Rohit45@gmail.com','4556545654',45000);
+
+1 row created.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+
+
+       122 Ayush                aayush355@yahoo.com            12535345
+
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000
+
+
+6 rows selected.
+
+SQL> select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+
+
+       122 Ayush                aayush355@yahoo.com            12535345
+
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000
+
+
+6 rows selected.
+
+SQL> Select name,email  from student;
+
+NAME                 EMAIL
+-------------------- ------------------------------
+Sourav               sourav345@yahoo.com
+Ayush                aayush355@yahoo.com
+Saurabh              Rajendra554@gmail.com
+Rahul                Rahul45@hotmail.com
+Saurabh              Sonam@bharatmail.com
+Rohit                Rohit45@gmail.com
+
+6 rows selected.
+
+SQL> update student set fees = 56000 where stid =432;
+
+2 rows updated.
+
+SQL> Select name,email  from student;
+
+NAME                 EMAIL
+-------------------- ------------------------------
+Sourav               sourav345@yahoo.com
+Ayush                aayush355@yahoo.com
+Saurabh              Rajendra554@gmail.com
+Rahul                Rahul45@hotmail.com
+Saurabh              Sonam@bharatmail.com
+Rohit                Rohit45@gmail.com
+
+6 rows selected.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+
+
+       122 Ayush                aayush355@yahoo.com            12535345
+
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+     56000
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000
+
+
+6 rows selected.
+
+SQL> update student set fees = 67000 where fees is null;
+
+3 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES
+----------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+     56000
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000
+
+
+6 rows selected.
+
+SQL> Select name,fees from student ;
+
+NAME                       FEES
+-------------------- ----------
+Sourav                    67000
+Ayush                     67000
+Saurabh                   56000
+Rahul                     67000
+Saurabh                   56000
+Rohit                     45000
+
+6 rows selected.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+
+SQL> alter table student add concession number(3);
+
+Table altered.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+ CONCESSION                                         NUMBER(3)
+
+SQL> update student set conccession =5 ;
+update student set conccession =5
+                   *
+ERROR at line 1:
+ORA-00904: "CONCCESSION": invalid identifier
+
+
+SQL> update student set concession =5 ;
+
+6 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION
+---------- ----------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          5
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION
+---------- ----------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+     56000          5
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5
+
+
+6 rows selected.
+
+SQL> alter table student add finalpayment number(7);
+
+Table altered.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+ CONCESSION                                         NUMBER(3)
+ FINALPAYMENT                                       NUMBER(7)
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          5
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+     56000          5
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5
+
+
+6 rows selected.
+
+SQL> update student set finalpayment = fees-(5/100*fees) ;
+
+6 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        63650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          5        53200
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        63650
+
+       432 Saurabh              Sonam@bharatmail.com           67678789892
+     56000          5        53200
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        42750
+
+
+6 rows selected.
+
+SQL> update student set name='Sonam' where email='Sonam@bharatmail.com';
+
+1 row updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        63650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          5        53200
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        63650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          5        53200
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        42750
+
+
+6 rows selected.
+
+SQL> update student set concession=7 where stid=432;
+
+2 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        63650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        53200
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        63650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53200
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        42750
+
+
+6 rows selected.
+
+SQL> update student set finalpayment=fees-(fees*concession/100);
+
+6 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        63650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        52080
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        63650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        52080
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        42750
+
+
+6 rows selected.
+
+SQL> Select name,finalpayment from student where fees>=45000 and fees<=56000;
+
+NAME                 FINALPAYMENT
+-------------------- ------------
+Saurabh                     52080
+Sonam                       52080
+Rohit                       42750
+
+SQL> Select name,concession,finalpayment from student where fees>=45000 and fees<=56000;
+
+NAME                 CONCESSION FINALPAYMENT
+-------------------- ---------- ------------
+Saurabh                       7        52080
+Sonam                         7        52080
+Rohit                         5        42750
+
+SQL> Select name,fees,conccession,finalpayment from student where concession=7 or fees>=67000;
+Select name,fees,conccession,finalpayment from student where concession=7 or fees>=67000
+                 *
+ERROR at line 1:
+ORA-00904: "CONCCESSION": invalid identifier
+
+
+SQL> Select name,fees,concession,finalpayment from student where concession=7 or fees>=67000;
+
+NAME                       FEES CONCESSION FINALPAYMENT
+-------------------- ---------- ---------- ------------
+Sourav                    67000          5        63650
+Ayush                     67000          5        63650
+Saurabh                   56000          7        52080
+Rahul                     67000          5        63650
+Sonam                     56000          7        52080
+
+SQL> update student finalpayment = finalpayment+1000 where name between('Ayush','Sonam');
+update student finalpayment = finalpayment+1000 where name between('Ayush','Sonam')
+                            *
+ERROR at line 1:
+ORA-00971: missing SET keyword
+
+
+SQL> update student set finalpayment = finalpayment+1000 where name between('Ayush','Sonam');
+update student set finalpayment = finalpayment+1000 where name between('Ayush','Sonam')
+                                                                              *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> update student set finalpayment = finalpayment+1000 where name between 'Ayush' and 'Sonam';
+
+5 rows updated.
+
+SQL> Select name,fees,concession,finalpayment from student where concession=7 or fees>=67000;
+
+NAME                       FEES CONCESSION FINALPAYMENT
+-------------------- ---------- ---------- ------------
+Sourav                    67000          5        63650
+Ayush                     67000          5        64650
+Saurabh                   56000          7        53080
+Rahul                     67000          5        64650
+Sonam                     56000          7        53080
+
+SQL> Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh'_;
+Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh'_
+                                                                                         *
+ERROR at line 1:
+ORA-00911: invalid character
+
+
+SQL> Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh');
+
+NAME                       FEES CONCESSION FINALPAYMENT
+-------------------- ---------- ---------- ------------
+Sourav                    67000          5        63650
+Rahul                     67000          5        64650
+Sonam                     56000          7        53080
+Rohit                     45000          5        43750
+
+SQL> Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh',Sonam);
+Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh',Sonam)
+                                                                                          *
+ERROR at line 1:
+ORA-00904: "SONAM": invalid identifier
+
+
+SQL> Select name,fees,concession,finalpayment from student where name not in('Ayush','Saurabh','Sonam');
+
+NAME                       FEES CONCESSION FINALPAYMENT
+-------------------- ---------- ---------- ------------
+Sourav                    67000          5        63650
+Rahul                     67000          5        64650
+Rohit                     45000          5        43750
+
+SQL> Select name,fees,concession,finalpayment from student where name!='Saurabh' and name!='Sourav';
+
+NAME                       FEES CONCESSION FINALPAYMENT
+-------------------- ---------- ---------- ------------
+Ayush                     67000          5        64650
+Rahul                     67000          5        64650
+Sonam                     56000          7        53080
+Rohit                     45000          5        43750
+
+SQL> Select * from Student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        64650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        53080
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT
+---------- ---------- ------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        64650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53080
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        43750
+
+
+6 rows selected.
+
+SQL> Select name,email from student where name like 'S%';
+
+NAME                 EMAIL
+-------------------- ------------------------------
+Sourav               sourav345@yahoo.com
+Saurabh              Rajendra554@gmail.com
+Sonam                Sonam@bharatmail.com
+
+SQL> Select name,email from student where name like 'S%' and name like 'A%';
+
+no rows selected
+
+SQL> Select name,email from student where name like 'S%' and name like '%A%';
+
+no rows selected
+
+SQL> Select name,email from student where name like 'S%' ;
+
+NAME                 EMAIL
+-------------------- ------------------------------
+Sourav               sourav345@yahoo.com
+Saurabh              Rajendra554@gmail.com
+Sonam                Sonam@bharatmail.com
+
+SQL> /*Alter Command*/
+SQL> desc Student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+ CONCESSION                                         NUMBER(3)
+ FINALPAYMENT                                       NUMBER(7)
+
+SQL> /*Adding a column*/
+SQL> Alter table student add deductionamount number(5);
+
+Table altered.
+
+SQL> desc Student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STID                                               NUMBER(3)
+ NAME                                               VARCHAR2(20)
+ EMAIL                                              VARCHAR2(30)
+ CONTACT                                            VARCHAR2(11)
+ FEES                                               NUMBER(7)
+ CONCESSION                                         NUMBER(3)
+ FINALPAYMENT                                       NUMBER(7)
+ DEDUCTIONAMOUNT                                    NUMBER(5)
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        64650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        53080
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        64650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53080
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        43750
+
+
+6 rows selected.
+
+SQL> update student set deductionamount = 5/100*fees ;
+
+6 rows updated.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650            3350
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        64650            3350
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        53080            2800
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        64650            3350
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53080            2800
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        43750            2250
+
+
+6 rows selected.
+
+SQL> delete from student where name='Saurabh';
+
+1 row deleted.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650            3350
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        64650            3350
+
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        64650            3350
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53080            2800
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        43750            2250
+
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> Select * from student;
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       123 Sourav               sourav345@yahoo.com            1234567890
+     67000          5        63650
+
+       122 Ayush                aayush355@yahoo.com            12535345
+     67000          5        64650
+
+       432 Saurabh              Rajendra554@gmail.com          3434343434
+     56000          7        53080
+
+
+      STID NAME                 EMAIL                          CONTACT
+---------- -------------------- ------------------------------ -----------
+      FEES CONCESSION FINALPAYMENT DEDUCTIONAMOUNT
+---------- ---------- ------------ ---------------
+       465 Rahul                Rahul45@hotmail.com            5656565656
+     67000          5        64650
+
+       432 Sonam                Sonam@bharatmail.com           67678789892
+     56000          7        53080
+
+       765 Rohit                Rohit45@gmail.com              4556545654
+     45000          5        43750
+
+
+6 rows selected.
+
+SQL> delete from student where name='Saurabh';
+
+1 row deleted.
+
+SQL>
