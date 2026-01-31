@@ -1,0 +1,26 @@
+match,teamInnings,battingpos,batsmanName,runs,balls,4s,6s,SR,out/not-out,match_id
+IND vs AUS,IND,1,Rohit Sharma,47,36,5,2,130.56,out,T20I # 1823
+IND vs AUS,IND,2,Shubman Gill,32,28,4,0,114.29,out,T20I # 1823
+IND vs AUS,IND,3,Virat Kohli,89,63,8,2,141.27,not-out,T20I # 1823
+IND vs AUS,IND,4,Shreyas Iyer,21,18,2,1,116.67,out,T20I # 1823
+IND vs AUS,IND,5,KL Rahul,38,29,3,1,131.03,out,T20I # 1823
+IND vs ENG,IND,1,Rohit Sharma,55,41,6,2,134.15,out,T20I # 1824
+IND vs ENG,IND,2,Shubman Gill,29,25,3,0,116.0,out,T20I # 1824
+IND vs ENG,IND,3,Virat Kohli,72,50,7,1,144.0,not-out,T20I # 1824
+IND vs ENG,IND,4,Suryakumar Yadav,46,28,4,3,164.29,not-out,T20I # 1824
+IND vs ENG,IND,5,Hardik Pandya,18,14,2,0,128.57,out,T20I # 1824
+PAK vs NZ,PAK,1,Babar Azam,61,44,5,1,138.64,out,T20I # 1825
+PAK vs NZ,PAK,2,Mohammad Rizwan,40,34,3,1,117.65,out,T20I # 1825
+PAK vs NZ,PAK,3,Fakhar Zaman,27,19,4,1,142.11,out,T20I # 1825
+PAK vs NZ,PAK,4,Iftikhar Ahmed,33,22,2,2,150.0,not-out,T20I # 1825
+PAK vs NZ,PAK,5,Shadab Khan,16,12,1,1,133.33,out,T20I # 1825
+AUS vs SA,AUS,1,David Warner,68,46,7,2,147.83,out,T20I # 1826
+AUS vs SA,AUS,2,Travis Head,34,22,5,1,154.55,out,T20I # 1826
+AUS vs SA,AUS,3,Steve Smith,41,35,3,0,117.14,out,T20I # 1826
+AUS vs SA,AUS,4,Glenn Maxwell,52,26,4,4,200.0,not-out,T20I # 1826
+AUS vs SA,AUS,5,Marcus Stoinis,22,15,2,1,146.67,not-out,T20I # 1826
+ENG vs SL,ENG,1,Jos Buttler,49,33,5,2,148.48,out,T20I # 1827
+ENG vs SL,ENG,2,Jonny Bairstow,35,27,4,1,129.63,out,T20I # 1827
+ENG vs SL,ENG,3,Joe Root,44,38,3,0,115.79,out,T20I # 1827
+ENG vs SL,ENG,4,Ben Stokes,58,34,6,2,170.59,not-out,T20I # 1827
+ENG vs SL,ENG,5,Liam Livingstone,26,15,2,2,173.33,out,T20I # 1827

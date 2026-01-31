@@ -1,0 +1,1122 @@
+[
+  {
+    "name": "Rohit Sharma",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Rohit Sharma is an international cricketer representing India, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Virat Kohli",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Middle-order batsman",
+    "description": "Virat Kohli is an international cricketer representing India, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Shubman Gill",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Bowler",
+    "description": "Shubman Gill is an international cricketer representing India, contributing as a Bowler."
+  },
+  {
+    "name": "KL Rahul",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "All-rounder",
+    "description": "KL Rahul is an international cricketer representing India, contributing as a All-rounder."
+  },
+  {
+    "name": "Hardik Pandya",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Hardik Pandya is an international cricketer representing India, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Top-order batsman",
+    "description": "Jasprit Bumrah is an international cricketer representing India, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Mohammed Shami",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Middle-order batsman",
+    "description": "Mohammed Shami is an international cricketer representing India, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Bowler",
+    "description": "Ravindra Jadeja is an international cricketer representing India, contributing as a Bowler."
+  },
+  {
+    "name": "R Ashwin",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "All-rounder",
+    "description": "R Ashwin is an international cricketer representing India, contributing as a All-rounder."
+  },
+  {
+    "name": "Suryakumar Yadav",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Suryakumar Yadav is an international cricketer representing India, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Shreyas Iyer",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Top-order batsman",
+    "description": "Shreyas Iyer is an international cricketer representing India, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Ishan Kishan",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Middle-order batsman",
+    "description": "Ishan Kishan is an international cricketer representing India, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Rishabh Pant",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Bowler",
+    "description": "Rishabh Pant is an international cricketer representing India, contributing as a Bowler."
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "All-rounder",
+    "description": "Yuzvendra Chahal is an international cricketer representing India, contributing as a All-rounder."
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Kuldeep Yadav is an international cricketer representing India, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Axar Patel",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Top-order batsman",
+    "description": "Axar Patel is an international cricketer representing India, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Washington Sundar",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Washington Sundar is an international cricketer representing India, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Bowler",
+    "description": "Bhuvneshwar Kumar is an international cricketer representing India, contributing as a Bowler."
+  },
+  {
+    "name": "Deepak Chahar",
+    "team": "India",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "All-rounder",
+    "description": "Deepak Chahar is an international cricketer representing India, contributing as a All-rounder."
+  },
+  {
+    "name": "Arshdeep Singh",
+    "team": "India",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Arshdeep Singh is an international cricketer representing India, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "David Warner",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Top-order batsman",
+    "description": "David Warner is an international cricketer representing Australia, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Steve Smith",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Steve Smith is an international cricketer representing Australia, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Marnus Labuschagne",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Bowler",
+    "description": "Marnus Labuschagne is an international cricketer representing Australia, contributing as a Bowler."
+  },
+  {
+    "name": "Travis Head",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Travis Head is an international cricketer representing Australia, contributing as a All-rounder."
+  },
+  {
+    "name": "Glenn Maxwell",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Glenn Maxwell is an international cricketer representing Australia, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Marcus Stoinis",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Top-order batsman",
+    "description": "Marcus Stoinis is an international cricketer representing Australia, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Pat Cummins",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Middle-order batsman",
+    "description": "Pat Cummins is an international cricketer representing Australia, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Mitchell Starc",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Bowler",
+    "description": "Mitchell Starc is an international cricketer representing Australia, contributing as a Bowler."
+  },
+  {
+    "name": "Josh Hazlewood",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Josh Hazlewood is an international cricketer representing Australia, contributing as a All-rounder."
+  },
+  {
+    "name": "Adam Zampa",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Adam Zampa is an international cricketer representing Australia, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Alex Carey",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Alex Carey is an international cricketer representing Australia, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Cameron Green",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Middle-order batsman",
+    "description": "Cameron Green is an international cricketer representing Australia, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Mitchell Marsh",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Bowler",
+    "description": "Mitchell Marsh is an international cricketer representing Australia, contributing as a Bowler."
+  },
+  {
+    "name": "Matthew Wade",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "All-rounder",
+    "description": "Matthew Wade is an international cricketer representing Australia, contributing as a All-rounder."
+  },
+  {
+    "name": "Ashton Agar",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Ashton Agar is an international cricketer representing Australia, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Nathan Lyon",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Nathan Lyon is an international cricketer representing Australia, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Sean Abbott",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Middle-order batsman",
+    "description": "Sean Abbott is an international cricketer representing Australia, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Josh Inglis",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Bowler",
+    "description": "Josh Inglis is an international cricketer representing Australia, contributing as a Bowler."
+  },
+  {
+    "name": "Aaron Finch",
+    "team": "Australia",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "All-rounder",
+    "description": "Aaron Finch is an international cricketer representing Australia, contributing as a All-rounder."
+  },
+  {
+    "name": "Usman Khawaja",
+    "team": "Australia",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Usman Khawaja is an international cricketer representing Australia, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Joe Root",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Top-order batsman",
+    "description": "Joe Root is an international cricketer representing England, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Ben Stokes",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Middle-order batsman",
+    "description": "Ben Stokes is an international cricketer representing England, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Jos Buttler",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Bowler",
+    "description": "Jos Buttler is an international cricketer representing England, contributing as a Bowler."
+  },
+  {
+    "name": "Jonny Bairstow",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "All-rounder",
+    "description": "Jonny Bairstow is an international cricketer representing England, contributing as a All-rounder."
+  },
+  {
+    "name": "Harry Brook",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Harry Brook is an international cricketer representing England, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Dawid Malan",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Top-order batsman",
+    "description": "Dawid Malan is an international cricketer representing England, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Jason Roy",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Middle-order batsman",
+    "description": "Jason Roy is an international cricketer representing England, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Moeen Ali",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Bowler",
+    "description": "Moeen Ali is an international cricketer representing England, contributing as a Bowler."
+  },
+  {
+    "name": "Adil Rashid",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "All-rounder",
+    "description": "Adil Rashid is an international cricketer representing England, contributing as a All-rounder."
+  },
+  {
+    "name": "Chris Woakes",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Chris Woakes is an international cricketer representing England, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Mark Wood",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Top-order batsman",
+    "description": "Mark Wood is an international cricketer representing England, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Jofra Archer",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Jofra Archer is an international cricketer representing England, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Sam Curran",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Bowler",
+    "description": "Sam Curran is an international cricketer representing England, contributing as a Bowler."
+  },
+  {
+    "name": "Liam Livingstone",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "All-rounder",
+    "description": "Liam Livingstone is an international cricketer representing England, contributing as a All-rounder."
+  },
+  {
+    "name": "Reece Topley",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Reece Topley is an international cricketer representing England, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "James Anderson",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Top-order batsman",
+    "description": "James Anderson is an international cricketer representing England, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Stuart Broad",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Stuart Broad is an international cricketer representing England, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Phil Salt",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Bowler",
+    "description": "Phil Salt is an international cricketer representing England, contributing as a Bowler."
+  },
+  {
+    "name": "Olly Pope",
+    "team": "England",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Olly Pope is an international cricketer representing England, contributing as a All-rounder."
+  },
+  {
+    "name": "Tom Curran",
+    "team": "England",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Tom Curran is an international cricketer representing England, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Babar Azam",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Top-order batsman",
+    "description": "Babar Azam is an international cricketer representing Pakistan, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Mohammad Rizwan",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Middle-order batsman",
+    "description": "Mohammad Rizwan is an international cricketer representing Pakistan, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Fakhar Zaman",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Bowler",
+    "description": "Fakhar Zaman is an international cricketer representing Pakistan, contributing as a Bowler."
+  },
+  {
+    "name": "Imam-ul-Haq",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Imam-ul-Haq is an international cricketer representing Pakistan, contributing as a All-rounder."
+  },
+  {
+    "name": "Shadab Khan",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Shadab Khan is an international cricketer representing Pakistan, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Iftikhar Ahmed",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Iftikhar Ahmed is an international cricketer representing Pakistan, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Shaheen Afridi",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Middle-order batsman",
+    "description": "Shaheen Afridi is an international cricketer representing Pakistan, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Haris Rauf",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Bowler",
+    "description": "Haris Rauf is an international cricketer representing Pakistan, contributing as a Bowler."
+  },
+  {
+    "name": "Hasan Ali",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "All-rounder",
+    "description": "Hasan Ali is an international cricketer representing Pakistan, contributing as a All-rounder."
+  },
+  {
+    "name": "Naseem Shah",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Naseem Shah is an international cricketer representing Pakistan, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Mohammad Wasim",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Mohammad Wasim is an international cricketer representing Pakistan, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Asif Ali",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Middle-order batsman",
+    "description": "Asif Ali is an international cricketer representing Pakistan, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Sarfaraz Ahmed",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Bowler",
+    "description": "Sarfaraz Ahmed is an international cricketer representing Pakistan, contributing as a Bowler."
+  },
+  {
+    "name": "Abdullah Shafique",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "All-rounder",
+    "description": "Abdullah Shafique is an international cricketer representing Pakistan, contributing as a All-rounder."
+  },
+  {
+    "name": "Saud Shakeel",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Saud Shakeel is an international cricketer representing Pakistan, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Faheem Ashraf",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Top-order batsman",
+    "description": "Faheem Ashraf is an international cricketer representing Pakistan, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Usman Qadir",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Middle-order batsman",
+    "description": "Usman Qadir is an international cricketer representing Pakistan, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Zaman Khan",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Bowler",
+    "description": "Zaman Khan is an international cricketer representing Pakistan, contributing as a Bowler."
+  },
+  {
+    "name": "Agha Salman",
+    "team": "Pakistan",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "All-rounder",
+    "description": "Agha Salman is an international cricketer representing Pakistan, contributing as a All-rounder."
+  },
+  {
+    "name": "Mohammad Nawaz",
+    "team": "Pakistan",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Mohammad Nawaz is an international cricketer representing Pakistan, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Kane Williamson",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Top-order batsman",
+    "description": "Kane Williamson is an international cricketer representing New Zealand, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Devon Conway",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Middle-order batsman",
+    "description": "Devon Conway is an international cricketer representing New Zealand, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Tom Latham",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Bowler",
+    "description": "Tom Latham is an international cricketer representing New Zealand, contributing as a Bowler."
+  },
+  {
+    "name": "Glenn Phillips",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "All-rounder",
+    "description": "Glenn Phillips is an international cricketer representing New Zealand, contributing as a All-rounder."
+  },
+  {
+    "name": "Daryl Mitchell",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Daryl Mitchell is an international cricketer representing New Zealand, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "James Neesham",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Top-order batsman",
+    "description": "James Neesham is an international cricketer representing New Zealand, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Mitchell Santner",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Mitchell Santner is an international cricketer representing New Zealand, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Trent Boult",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Bowler",
+    "description": "Trent Boult is an international cricketer representing New Zealand, contributing as a Bowler."
+  },
+  {
+    "name": "Tim Southee",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "All-rounder",
+    "description": "Tim Southee is an international cricketer representing New Zealand, contributing as a All-rounder."
+  },
+  {
+    "name": "Lockie Ferguson",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Lockie Ferguson is an international cricketer representing New Zealand, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Ish Sodhi",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Top-order batsman",
+    "description": "Ish Sodhi is an international cricketer representing New Zealand, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Rachin Ravindra",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Rachin Ravindra is an international cricketer representing New Zealand, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Will Young",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Bowler",
+    "description": "Will Young is an international cricketer representing New Zealand, contributing as a Bowler."
+  },
+  {
+    "name": "Henry Nicholls",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Henry Nicholls is an international cricketer representing New Zealand, contributing as a All-rounder."
+  },
+  {
+    "name": "Mark Chapman",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Mark Chapman is an international cricketer representing New Zealand, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Adam Milne",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Top-order batsman",
+    "description": "Adam Milne is an international cricketer representing New Zealand, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Kyle Jamieson",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Middle-order batsman",
+    "description": "Kyle Jamieson is an international cricketer representing New Zealand, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Finn Allen",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Bowler",
+    "description": "Finn Allen is an international cricketer representing New Zealand, contributing as a Bowler."
+  },
+  {
+    "name": "Martin Guptill",
+    "team": "New Zealand",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Martin Guptill is an international cricketer representing New Zealand, contributing as a All-rounder."
+  },
+  {
+    "name": "Ross Taylor",
+    "team": "New Zealand",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Ross Taylor is an international cricketer representing New Zealand, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Quinton de Kock",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Quinton de Kock is an international cricketer representing South Africa, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Temba Bavuma",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Middle-order batsman",
+    "description": "Temba Bavuma is an international cricketer representing South Africa, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Aiden Markram",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Bowler",
+    "description": "Aiden Markram is an international cricketer representing South Africa, contributing as a Bowler."
+  },
+  {
+    "name": "Rassie van der Dussen",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "All-rounder",
+    "description": "Rassie van der Dussen is an international cricketer representing South Africa, contributing as a All-rounder."
+  },
+  {
+    "name": "David Miller",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "David Miller is an international cricketer representing South Africa, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Heinrich Klaasen",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Heinrich Klaasen is an international cricketer representing South Africa, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Kagiso Rabada",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Middle-order batsman",
+    "description": "Kagiso Rabada is an international cricketer representing South Africa, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Anrich Nortje",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Bowler",
+    "description": "Anrich Nortje is an international cricketer representing South Africa, contributing as a Bowler."
+  },
+  {
+    "name": "Lungi Ngidi",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "All-rounder",
+    "description": "Lungi Ngidi is an international cricketer representing South Africa, contributing as a All-rounder."
+  },
+  {
+    "name": "Tabraiz Shamsi",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Tabraiz Shamsi is an international cricketer representing South Africa, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Keshav Maharaj",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Top-order batsman",
+    "description": "Keshav Maharaj is an international cricketer representing South Africa, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Marco Jansen",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Middle-order batsman",
+    "description": "Marco Jansen is an international cricketer representing South Africa, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Wayne Parnell",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Bowler",
+    "description": "Wayne Parnell is an international cricketer representing South Africa, contributing as a Bowler."
+  },
+  {
+    "name": "Reeza Hendricks",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "All-rounder",
+    "description": "Reeza Hendricks is an international cricketer representing South Africa, contributing as a All-rounder."
+  },
+  {
+    "name": "Tristan Stubbs",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Tristan Stubbs is an international cricketer representing South Africa, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Gerald Coetzee",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Top-order batsman",
+    "description": "Gerald Coetzee is an international cricketer representing South Africa, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Bjorn Fortuin",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Middle-order batsman",
+    "description": "Bjorn Fortuin is an international cricketer representing South Africa, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Ryan Rickelton",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Bowler",
+    "description": "Ryan Rickelton is an international cricketer representing South Africa, contributing as a Bowler."
+  },
+  {
+    "name": "Dean Elgar",
+    "team": "South Africa",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "All-rounder",
+    "description": "Dean Elgar is an international cricketer representing South Africa, contributing as a All-rounder."
+  },
+  {
+    "name": "Faf du Plessis",
+    "team": "South Africa",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Faf du Plessis is an international cricketer representing South Africa, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Dasun Shanaka",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Top-order batsman",
+    "description": "Dasun Shanaka is an international cricketer representing Sri Lanka, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Kusal Mendis",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Kusal Mendis is an international cricketer representing Sri Lanka, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Pathum Nissanka",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Bowler",
+    "description": "Pathum Nissanka is an international cricketer representing Sri Lanka, contributing as a Bowler."
+  },
+  {
+    "name": "Charith Asalanka",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "All-rounder",
+    "description": "Charith Asalanka is an international cricketer representing Sri Lanka, contributing as a All-rounder."
+  },
+  {
+    "name": "Wanindu Hasaranga",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Wanindu Hasaranga is an international cricketer representing Sri Lanka, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Maheesh Theekshana",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Top-order batsman",
+    "description": "Maheesh Theekshana is an international cricketer representing Sri Lanka, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Dushmantha Chameera",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "Middle-order batsman",
+    "description": "Dushmantha Chameera is an international cricketer representing Sri Lanka, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Kasun Rajitha",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Bowler",
+    "description": "Kasun Rajitha is an international cricketer representing Sri Lanka, contributing as a Bowler."
+  },
+  {
+    "name": "Dilshan Madushanka",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Dilshan Madushanka is an international cricketer representing Sri Lanka, contributing as a All-rounder."
+  },
+  {
+    "name": "Lahiru Kumara",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Lahiru Kumara is an international cricketer representing Sri Lanka, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Angelo Mathews",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Top-order batsman",
+    "description": "Angelo Mathews is an international cricketer representing Sri Lanka, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Dhananjaya de Silva",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "Middle-order batsman",
+    "description": "Dhananjaya de Silva is an international cricketer representing Sri Lanka, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Avishka Fernando",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Bowler",
+    "description": "Avishka Fernando is an international cricketer representing Sri Lanka, contributing as a Bowler."
+  },
+  {
+    "name": "Bhanuka Rajapaksa",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "playingrole": "All-rounder",
+    "description": "Bhanuka Rajapaksa is an international cricketer representing Sri Lanka, contributing as a All-rounder."
+  },
+  {
+    "name": "Chamika Karunaratne",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Chamika Karunaratne is an international cricketer representing Sri Lanka, contributing as a Wicketkeeper-batsman."
+  },
+  {
+    "name": "Ashen Bandara",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm fast",
+    "playingrole": "Top-order batsman",
+    "description": "Ashen Bandara is an international cricketer representing Sri Lanka, contributing as a Top-order batsman."
+  },
+  {
+    "name": "Jeffrey Vandersay",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm off break",
+    "playingrole": "Middle-order batsman",
+    "description": "Jeffrey Vandersay is an international cricketer representing Sri Lanka, contributing as a Middle-order batsman."
+  },
+  {
+    "name": "Nuwan Thushara",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm leg break",
+    "playingrole": "Bowler",
+    "description": "Nuwan Thushara is an international cricketer representing Sri Lanka, contributing as a Bowler."
+  },
+  {
+    "name": "Sadeera Samarawickrama",
+    "team": "Sri Lanka",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "playingrole": "All-rounder",
+    "description": "Sadeera Samarawickrama is an international cricketer representing Sri Lanka, contributing as a All-rounder."
+  },
+  {
+    "name": "Dimuth Karunaratne",
+    "team": "Sri Lanka",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "playingrole": "Wicketkeeper-batsman",
+    "description": "Dimuth Karunaratne is an international cricketer representing Sri Lanka, contributing as a Wicketkeeper-batsman."
+  }
+]

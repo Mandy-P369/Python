@@ -1,0 +1,47 @@
+[
+  {
+    "team1": "India",
+    "team2": "Australia",
+    "winner": "India",
+    "margin": "won by 18 runs",
+    "ground": "Melbourne Cricket Ground",
+    "matchdate": "2024-06-01",
+    "scorecard": "T20I # 1823"
+  },
+  {
+    "team1": "India",
+    "team2": "England",
+    "winner": "India",
+    "margin": "won by 11 runs",
+    "ground": "Wankhede Stadium, Mumbai",
+    "matchdate": "2024-06-03",
+    "scorecard": "T20I # 1824"
+  },
+  {
+    "team1": "Pakistan",
+    "team2": "New Zealand",
+    "winner": "Pakistan",
+    "margin": "won by 6 wickets",
+    "ground": "Sharjah Cricket Stadium",
+    "matchdate": "2024-06-05",
+    "scorecard": "T20I # 1825"
+  },
+  {
+    "team1": "Australia",
+    "team2": "South Africa",
+    "winner": "Australia",
+    "margin": "won by 21 runs",
+    "ground": "Sydney Cricket Ground",
+    "matchdate": "2024-06-07",
+    "scorecard": "T20I # 1826"
+  },
+  {
+    "team1": "England",
+    "team2": "Sri Lanka",
+    "winner": "England",
+    "margin": "won by 27 runs",
+    "ground": "Lord\u2019s, London",
+    "matchdate": "2024-06-09",
+    "scorecard": "T20I # 1827"
+  }
+]
